@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.company-section {
+    padding: 20px;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blue-bar {
+    width: 4px;
+    height: 20px;
+    background-color: #4a90e2;
+    margin-right: 10px;
+}
+
+.company-header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.info-grid {
+    border: 1px solid #e0e0e0;
+}
+
+.info-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 40px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-right: 1px solid #e0e0e0;
+    min-height: 40px;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-item.full-width {
+    flex: 1;
+    border-right: none;
+}
+
+.info-item.left-col {
+    flex: 1;
+}
+
+.info-item.right-col {
+    flex: 1;
+}
+
+.info-item.address-col {
+    flex: 2;
+    align-items: flex-start;
+}
+
+.info-item.legal-rep-col {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.address-content {
+    line-height: 1.4;
+}
+
+.address-content div {
+    margin-bottom: 2px;
+}
+
+.legal-rep-content {
+    text-align: right;
+    line-height: 1.4;
+}
+
+.legal-rep-content .label {
+    margin-bottom: 4px;
+    display: block;
+}
+
+.legal-rep-content .value {
+    display: block;
+}
+
+.label {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.value {
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* 标签行样式 */
+.label-row {
+    background-color: #fafafa;
+}
+
+.label-row .info-item {
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .info-item {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+    
+    .label, .value {
+        font-size: 13px;
+    }
+}
